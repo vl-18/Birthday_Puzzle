@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigsaw Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="user-input-section" class="section">
+        <h1>Welcome to the Jigsaw Puzzle Game</h1>
+        <label for="username">Enter your name:</label>
+        <input type="text" id="username" name="username" required>
+        <button id="start-game-button">Play</button>
+    </div>
+
+    <div id="puzzle-section" class="section hidden">
+        <h2 id="username-display"></h2>
+        <div id="puzzle-container" class="puzzle-container"></div>
+        <div id="pieces-container" class="pieces-container"></div>
+    </div>
+
+    <div id="message-section" class="section hidden">
+        <h1 id="message"></h1>
+        <button id="next-puzzle-button">Next Puzzle</button>
+    </div>
+
+    <div id="final-message-section" class="section hidden">
+        <h1>Congratulations!</h1>
+        <h2>You've completed all the puzzles.</h2>
+        <button id="play-again-button">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
